@@ -187,7 +187,7 @@ impl<F1: Fuel, F2: Fuel> Fuel for Mixed<F1, F2> {
 }
 
 // Now think about how you can make the mixer configurable, such that it would produce a new fuel
-// with an energy density that is more influences by one type than the other.
+// with an energy density that is more influenced by one type than the other.
 //
 // For example, you have a mixer of F1, F2, and some coefficient C1, where the energy density of the
 // mixture is `F1 * C1 + F2 * (1 - C1) )` where `C1` is a ratio (which you have to represent again
@@ -215,7 +215,7 @@ pub fn omni_80_energy(amount: u32) -> BTU {
 
 // Finally, let's consider marker traits, and some trait bounds.
 
-/// Some traits are just markers. They don't bring any additional functionality anything, other than
+/// Some traits are just markers. They don't bring any additional functionality, other than
 /// marking a type with some trait.
 pub trait IsRenewable {}
 impl IsRenewable for LithiumBattery {}
