@@ -14,7 +14,7 @@ use crate::e_common_traits::Employee;
 /// where the `name` and `uid` must be initialized, but the `experience` and `wage` can be left at
 /// their default values, 0.
 ///
-/// The final `fn build` should return `Err(())` if either of `name` or `id` are not specified. See the
+/// The final `fn build` should return `Err(())` if either of `name` or `uid` are not specified. See the
 /// example section below.
 ///
 /// > PS. Did you now know that the code snippets in your rust docs also compile, and are tested?
