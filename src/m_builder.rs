@@ -104,7 +104,7 @@ pub struct UnIdentified;
 /// A new builder that uses the "type-state" pattern to ensure that the user has set the name and
 /// uid. The main trick here is that instead of having `name` be represented by `Option<String>`, we
 /// have two unique types mimicking the `Option<_>`: `Named { .. }` is analogous to `Some(_)` and
-/// `UnNamed` is analogous to `None`. But, `Option<_>` is jus ONE type, but `Named` and `UnNamed`
+/// `UnNamed` is analogous to `None`. But, `Option<_>` is just ONE type, but `Named` and `UnNamed`
 /// are two different types.
 ///
 /// What's the benefit of that? we can make sure that the `fn build` is only implemented if both the
