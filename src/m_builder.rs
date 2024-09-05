@@ -14,7 +14,7 @@ use crate::e_common_traits::Employee;
 /// where the `name` and `uid` must be initialized, but the `experience` and `wage` can be left at
 /// their default values, 0.
 ///
-/// The final `fn build` return `Err(())` if either of `name` or `id` are not specified. See the
+/// The final `fn build` should return `Err(())` if either of `name` or `uid` are not specified. See the
 /// example section below.
 ///
 /// > PS. Did you now know that the code snippets in your rust docs also compile, and are tested?
@@ -104,13 +104,13 @@ pub struct UnIdentified;
 /// A new builder that uses the "type-state" pattern to ensure that the user has set the name and
 /// uid. The main trick here is that instead of having `name` be represented by `Option<String>`, we
 /// have two unique types mimicking the `Option<_>`: `Named { .. }` is analogous to `Some(_)` and
-/// `UnNamed` is analogous to `None`. But, `Option<_>` is jus ONE type, but `Named` and `UnNamed`
+/// `UnNamed` is analogous to `None`. But, `Option<_>` is just ONE type, but `Named` and `UnNamed`
 /// are two different types.
 ///
 /// What's the benefit of that? we can make sure that the `fn build` is only implemented if both the
 /// `Name` and `Id` generics are set to `Named` and `Identified`.
 ///
-/// > Did you know that not only you can write tests in your rust-docs, as we did in
+/// > Did you know that not only can you write tests in your rust-docs, as we did in
 /// > [`EmployeeBuilder`], you can also write snippets of code that MUST FAIL TO COMPILE? Cool, eh?
 /// > See: <https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html>
 ///

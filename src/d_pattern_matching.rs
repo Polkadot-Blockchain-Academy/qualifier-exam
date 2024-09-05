@@ -1,5 +1,5 @@
 //! Complete the following functions using the pattern matching syntax. That includes the `match`
-//! statement of the `matches!()` macro, if you feel like having an "1-liner".
+//! statement or the `matches!()` macro, if you feel like having an "1-liner".
 //!
 //! You can try and write them imperatively at first as well, but at the end of the day, we want you
 //! to write them using the `match` keyword or the `matches!` macro.
