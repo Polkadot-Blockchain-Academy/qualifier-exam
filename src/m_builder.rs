@@ -110,7 +110,7 @@ pub struct UnIdentified;
 /// What's the benefit of that? we can make sure that the `fn build` is only implemented if both the
 /// `Name` and `Id` generics are set to `Named` and `Identified`.
 ///
-/// > Did you know that not only you can write tests in your rust-docs, as we did in
+/// > Did you know that not only can you write tests in your rust-docs, as we did in
 /// > [`EmployeeBuilder`], you can also write snippets of code that MUST FAIL TO COMPILE? Cool, eh?
 /// > See: <https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html>
 ///
